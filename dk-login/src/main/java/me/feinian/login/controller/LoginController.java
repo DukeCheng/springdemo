@@ -1,0 +1,15 @@
+package me.feinian.login.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("login")
+public class LoginController {
+    //请求映射，当请求 /home 时执行该方法
+    @RequestMapping("/test")
+    public String home() {
+        return "Hello Test!";
+    }
+}
+
