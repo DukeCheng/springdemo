@@ -6,14 +6,18 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
 
-@ComponentScan({"me.feinian.test", "me.feinian.login"})
+
 //@ComponentScan
 //@SpringBootConfiguration
 //@EnableAutoConfiguration
-//@SpringBootApplication
+@RestController
+@ComponentScan({"me.feinian.test", "me.feinian.login"})
+@SpringBootApplication
+
 public class App extends SpringBootServletInitializer {
     public static void main(String[] args) {
         //启动 Web 容器
